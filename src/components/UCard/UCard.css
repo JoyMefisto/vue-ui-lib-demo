@@ -1,0 +1,16 @@
+.ui-card {
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-md);
+  background: var(--color-card-bg);
+  overflow: hidden;
+}
+
+.ui-card__header,
+.ui-card__footer {
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-weight: 600;
+}
+
+.ui-card__content {
+  padding: var(--spacing-md);
+}

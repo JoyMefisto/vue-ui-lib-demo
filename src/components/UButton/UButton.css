@@ -1,0 +1,79 @@
+.u-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+
+  border: none;
+  border-radius: var(--btn-radius);
+  padding: var(--btn-padding-md);
+
+  box-sizing: border-box;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    opacity 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.1s ease;
+}
+
+/* Sizes */
+.u-btn--sm {
+  padding: var(--btn-padding-sm);
+  font-size: var(--btn-font-size-sm);
+}
+.u-btn--md {
+  padding: var(--btn-padding-md);
+  font-size: var(--btn-font-size-md);
+}
+.u-btn--lg {
+  padding: var(--btn-padding-lg);
+  font-size: var(--btn-font-size-lg);
+}
+
+/* Variants */
+.u-btn--primary {
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-color);
+}
+.u-btn--secondary {
+  background-color: var(--btn-secondary-bg);
+  color: var(--btn-secondary-color);
+}
+.u-btn--warning {
+  background-color: var(--btn-warning-bg);
+  color: var(--btn-warning-color);
+}
+.u-btn--danger {
+  background-color: var(--btn-danger-bg);
+  color: var(--btn-danger-color);
+}
+
+/* States */
+.u-btn:hover:not(.is-disabled):not(:disabled) {
+  box-shadow: var(--btn-active-shadow);
+}
+.u-btn:active:not(.is-disabled):not(:disabled) {
+  transform: scale(var(--btn-active-scale));
+}
+.u-btn:focus {
+  outline: none;
+}
+.u-btn:focus-visible {
+  box-shadow: var(--btn-active-shadow);
+}
+
+/* Disabled */
+.is-disabled,
+.u-btn:disabled {
+  opacity: var(--btn-disabled-opacity);
+  cursor: not-allowed;
+  pointer-events: none;
+}

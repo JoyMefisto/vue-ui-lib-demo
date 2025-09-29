@@ -1,0 +1,77 @@
+:root {
+  /* ---- Radii ---- */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+
+  /* ---- Spacing ---- */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+
+  /* ---- Font ---- */
+  --font-family: 'Inter', sans-serif;
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-md: 1rem; /* 16px */
+  --font-size-lg: 1.125rem; /* 18px */
+
+  /* ---- Button ---- */
+  --btn-radius: 6px;
+  --btn-padding-sm: 0.25rem 0.5rem;
+  --btn-padding-md: 0.5rem 1rem;
+  --btn-padding-lg: 0.75rem 1.25rem;
+
+  --btn-font-size-sm: var(--font-size-sm);
+  --btn-font-size-md: var(--font-size-md);
+  --btn-font-size-lg: var(--font-size-lg);
+
+  --btn-primary-bg: #409eff;
+  --btn-primary-color: #fff;
+
+  --btn-secondary-bg: #fff;
+  --btn-secondary-color: #111827;
+
+  --btn-warning-bg: #e6a23c;
+  --btn-warning-color: #fff;
+
+  --btn-danger-bg: #f56c6c;
+  --btn-danger-color: #fff;
+
+  --btn-active-scale: 0.95;
+  --btn-active-shadow: 0 0 6px 1px rgba(47, 47, 47, 0.4);
+  --btn-disabled-opacity: 0.6;
+
+  /* ---- Card ---- */
+  --color-card-border: #d1d5db;
+  --color-card-bg: #ffffff;
+
+  /* ---- Input ---- */
+  --color-input-border: #d1d5db;
+  --color-input-bg: #ffffff;
+  --color-input-text: #111827;
+
+  /* ---- General Colors ---- */
+  --color-primary: #2563eb;
+  --color-primary-text: #ffffff;
+
+  --color-secondary: #6b7280;
+  --color-secondary-text: #ffffff;
+
+  --color-warning: #f59e0b;
+  --color-warning-text: #000000;
+
+  --color-error: #dc2626;
+  --color-error-text: #ffffff;
+
+  --color-background: #fff;
+  --color-text: #000;
+}
+
+/* Dark theme example */
+.theme-dark {
+  --color-background: #0f172a;
+  --color-text: #e6eef8;
+
+  --color-primary: #1e40af;
+  --color-card-bg: #1e293b;
+  --color-input-bg: #334155;
+  --color-input-text: #f1f5f9;
+}
